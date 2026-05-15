@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
     <title>Sistem Gaji</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <style>
 
@@ -74,6 +71,9 @@
                     <a class="nav-link" href="/gaji">Penggajian</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
             </ul>
         </div>
 
@@ -82,7 +82,6 @@
         </div>
     </div>
 
-    <!-- BOOTSTRAP JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
