@@ -10,7 +10,7 @@ use App\Models\Gaji;
 class DashboardController extends Controller
 {
     public function index() {
-        //hitung data
+    //hitung data
     $jumlah_departemen = Departemen::count();
     $jumlah_jabatan = Jabatan::count();
     $jumlah_karyawan = Karyawan::count();

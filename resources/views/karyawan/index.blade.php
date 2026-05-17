@@ -4,7 +4,7 @@
 
 <div class="page-header">
     <h3 class="page-title">Data Karyawan</h3>
-    <a href="/karyawan/create" class="btn btn-success">+ Tambah Karyawan</a>
+    <a href="/karyawan/create" class="btn btn-success">Tambah Karyawan</a>
 </div>
 
 <div class="table-box">

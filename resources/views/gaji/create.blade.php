@@ -102,25 +102,27 @@
 
             .then(data => {
 
-                document.getElementById('jabatan').value
-                    = data.jabatan;
+                document.getElementById('jabatan').value = data.jabatan;
 
-                document.getElementById('gaji_pokok').value
-                    = data.gaji_pokok;
+                document.getElementById('gaji_pokok').value = data.gaji_pokok;
 
-                document.getElementById('alpha').value
-                    = data.alpha;
+                document.getElementById('alpha').value = data.alpha;
 
-                document.getElementById('terlambat').value
-                    = data.terlambat;
+                document.getElementById('terlambat').value = data.terlambat;
 
-                document.getElementById('jam_lembur').value
-                    = data.jam_lembur;
-
+                document.getElementById('jam_lembur').value = data.jam_lembur;
             });
+        } else {
+            document.getElementById('jabatan').value = '';
 
+            document.getElementById('gaji_pokok').value = '';
+
+            document.getElementById('alpha').value = '';
+
+            document.getElementById('terlambat').value = '';
+
+            document.getElementById('jam_lembur').value = '';
         }
-
     }
 
     document.getElementById('karyawan_id')
@@ -133,5 +135,4 @@
         .addEventListener('keyup', getDataKaryawan);
 
 </script>
-
 @endsection

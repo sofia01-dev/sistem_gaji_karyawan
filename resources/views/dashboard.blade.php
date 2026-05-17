@@ -2,7 +2,13 @@
 
 @section('content')
 
-<h3 class="mb-4">Selamat Datang di Sistem Gaji Karyawan</h3>
+<h3 class="mt-4">Selamat Datang di Sistem Gaji Karyawan</h3>
+<p class="text-muted" class="mt-5">
+    Sistem ini digunakan untuk mengelola data
+    departemen, jabatan, karyawan, absensi,
+    lembur, dan proses penggajian karyawan
+    secara otomatis dan terstruktur.
+</p>
 
 <div class="row">
 

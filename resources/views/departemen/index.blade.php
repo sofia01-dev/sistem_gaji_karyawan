@@ -4,8 +4,7 @@
 
 <div class="page-header">
     <h3 class="page-title">Data Departemen</h3>
-
-    <a href="/departemen/create" class="btn btn-success">+Tambah Departemen</a>
+    <a href="/departemen/create" class="btn btn-success">Tambah Departemen</a>
 </div>
 
 <div class="table-box">

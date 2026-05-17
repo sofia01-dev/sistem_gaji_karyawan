@@ -72,13 +72,18 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Logout</a>
+                    <a class="nav-link" href="/logout" onclick="return confirm('Apakah Anda yakin ingin logout?')">Logout</a>
                 </li>
             </ul>
         </div>
 
         <div class="content">
-                @yield('content')
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            @yield('content')
         </div>
     </div>
 

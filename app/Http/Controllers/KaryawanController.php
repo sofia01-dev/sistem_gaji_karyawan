@@ -8,27 +8,18 @@ use Illuminate\Http\Request;
 
 class KaryawanController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $karyawan = Karyawan::with('jabatan.departemen')->get();
         return view('karyawan.index', compact('karyawan'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         $jabatan = Jabatan::all();
         return view('karyawan.create', compact('jabatan'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -48,26 +39,17 @@ class KaryawanController extends Controller
         return redirect('/karyawan')->with('success', 'Data karyawan berhasil ditambahkan');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Karyawan $karyawan)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Karyawan $karyawan)
     {
         $jabatan = Jabatan::all();
         return view('karyawan.edit', compact('karyawan', 'jabatan'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Karyawan $karyawan)
     {
         $request->validate([
@@ -81,9 +63,6 @@ class KaryawanController extends Controller
         return redirect('/karyawan')->with('success', 'Data karyawan berhasil diupdate');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Karyawan $karyawan)
     {
         $karyawan->delete();

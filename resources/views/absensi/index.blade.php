@@ -4,7 +4,7 @@
 
 <div class="page-header">
     <h3 class="page-title">Data Absensi</h3>
-    <a href="/absensi/create" class="btn btn-success">+ Tambah Absensi</a>
+    <a href="/absensi/create" class="btn btn-success">Tambah Absensi</a>
 </div>
 
 <div class="table-box">

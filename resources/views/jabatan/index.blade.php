@@ -4,7 +4,7 @@
 
 <div class="page-header">
     <h3 class="page-title">Data Jabatan</h3>
-    <a href="/jabatan/create" class="btn btn-success">+ Tambah Jabatan</a>
+    <a href="/jabatan/create" class="btn btn-success">Tambah Jabatan</a>
 </div>
 
 <div class="table-box">

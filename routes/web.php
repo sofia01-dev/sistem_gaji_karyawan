@@ -40,5 +40,4 @@ Route::middleware('auth')->group(function () {
     Route::resource('gaji', GajiController::class);
 
     Route::get('/get-karyawan/{id}/{bulan}/{tahun}',[GajiController::class, 'getKaryawan']);
-
 });

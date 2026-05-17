@@ -37,7 +37,5 @@
         <button type="submit" class="btn btn-success">Simpan</button>
         <a href="/jabatan" class="btn btn-secondary">Kembali</a>
     </form>
-
-</div>
-    
+</div>   
 @endsection
